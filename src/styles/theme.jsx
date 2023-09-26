@@ -6,6 +6,7 @@ const theme = extendTheme({
     secondary: "#41a2b9",
     bgGradient: "linear(to-l, #7928CA, #FF0080)",
     bgColor: "#F5F5F5",
+    textColor: "#f1f1f1",
     primaryButton: {
       500: "#779bc1",
       600: "#139BDF",

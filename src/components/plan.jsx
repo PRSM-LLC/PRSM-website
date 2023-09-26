@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Box,
   Stack,
@@ -10,12 +10,12 @@ import {
   List,
   ListItem,
   ListIcon,
-  Button
-} from "@chakra-ui/react"
-import { FaCheckCircle } from "react-icons/fa"
+  Button,
+} from "@chakra-ui/react";
+import { FaCheckCircle } from "react-icons/fa";
 
 function PriceWrapper(props) {
-  const { children } = props
+  const { children } = props;
 
   return (
     <Box
@@ -28,7 +28,7 @@ function PriceWrapper(props) {
     >
       {children}
     </Box>
-  )
+  );
 }
 
 export default function Plan() {
@@ -86,18 +86,17 @@ export default function Plan() {
                 Basic SEO Setup
               </ListItem>
               <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                2 Weeks Post-Launch Support
+                <ListIcon as={FaCheckCircle} color="green.500" />2 Weeks
+                Post-Launch Support
               </ListItem>
               <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                3 Basic Features
+                <ListIcon as={FaCheckCircle} color="green.500" />3 Basic
+                Features
               </ListItem>
               <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                1 Advanced Feature
+                <ListIcon as={FaCheckCircle} color="green.500" />1 Advanced
+                Feature
               </ListItem>
-
             </List>
             <Box w="80%" pt={7}>
               <Button w="full" colorScheme="red" variant="outline">
@@ -117,10 +116,10 @@ export default function Plan() {
             >
               <Text
                 textTransform="uppercase"
-                bg={useColorModeValue("red.300", "red.700")}
+                bg={useColorModeValue("#139BFD", "#139BFD")}
                 px={3}
                 py={1}
-                color={useColorModeValue("gray.900", "gray.300")}
+                // color={useColorModeValue("gray.900", "gray.300")}
                 fontSize="sm"
                 fontWeight="600"
                 rounded="xl"
@@ -150,33 +149,34 @@ export default function Plan() {
               borderBottomRadius={"xl"}
             >
               <List spacing={3} textAlign="start" px={12}>
-              <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                Customized Website Design & Development
-              </ListItem>
-              <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                Responsive Web Design
-              </ListItem>
-              <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                Advanced SEO Setup
-              </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  1 Month Post-Launch Support                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5 Basic Features
+                  Customized Website Design & Development
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  3 Advanced Features                </ListItem>
+                  Responsive Web Design
+                </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  1 Premium Feature
+                  Advanced SEO Setup
                 </ListItem>
-
+                <ListItem>
+                  <ListIcon as={FaCheckCircle} color="green.500" />1 Month
+                  Post-Launch Support{" "}
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={FaCheckCircle} color="green.500" />5 Basic
+                  Features
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={FaCheckCircle} color="green.500" />3 Advanced
+                  Features{" "}
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={FaCheckCircle} color="green.500" />1 Premium
+                  Feature
+                </ListItem>
               </List>
               <Box w="80%" pt={7}>
                 <Button w="full" colorScheme="red">
@@ -187,6 +187,27 @@ export default function Plan() {
           </Box>
         </PriceWrapper>
         <PriceWrapper>
+          <Box position="relative">
+            <Box
+              position="absolute"
+              top="-16px"
+              left="50%"
+              style={{ transform: "translate(-50%)" }}
+            >
+              <Text
+                textTransform="uppercase"
+                bg={useColorModeValue("#B165FE", "#B165FE")}
+                px={3}
+                py={1}
+                // color={useColorModeValue("gray.900", "gray.300")}
+                fontSize="sm"
+                fontWeight="600"
+                rounded="xl"
+              >
+                BEST VALUE
+              </Text>
+            </Box>
+          </Box>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
               Premium
@@ -209,7 +230,7 @@ export default function Plan() {
             borderBottomRadius={"xl"}
           >
             <List spacing={3} textAlign="start" px={12}>
-            <ListItem>
+              <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
                 Customized Website Design & Development
               </ListItem>
@@ -221,20 +242,22 @@ export default function Plan() {
                 <ListIcon as={FaCheckCircle} color="green.500" />
                 Advanced SEO Setup with optimization
               </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  2 Months Post-Launch Support                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  7 Basic Features
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  6 Advanced Features                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  4 Premium Features
-                </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />2 Months
+                Post-Launch Support{" "}
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />7 Basic
+                Features
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />6 Advanced
+                Features{" "}
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />4 Premium
+                Features
+              </ListItem>
             </List>
             <Box w="80%" pt={7}>
               <Button w="full" colorScheme="red" variant="outline">
@@ -245,5 +268,5 @@ export default function Plan() {
         </PriceWrapper>
       </Stack>
     </Box>
-  )
+  );
 }

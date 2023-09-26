@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Base styles for the gallery image container */
+.gallery-img {
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+/* Darken the image on hover */
+.gallery-img:hover img {
+    filter: brightness(20%);
+    cursor: pointer;
+}
+
+/* Show a semi-transparent black overlay on hover */
+.gallery-img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;  /* Allow interactions with the image below */
+}
+
+/* Display the "Preview" text in the center on hover */
+.gallery-img:hover::before {
+    content: "Preview";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;  /* or adjust according to your preference */
+    pointer-events: none;
+}
+
+.terminalScrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.terminalScrollbar::-webkit-scrollbar-track {
+    background: #000;
+}
+
+.terminalScrollbar::-webkit-scrollbar-thumb {
+    background-color: #504ADA; /* Color of the draggable scrollbar thumb */
+    border-radius: 4px; /* Makes the thumb rounded */
+    transition: background-color 0.2s; /* Optional: Adds a transition effect when hovering */
+}
+
+.terminalScrollbar::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px; /* Adjust the height of the horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #504ADA; /* Color of the draggable scrollbar thumb */
+    border-radius: 4px; /* Makes the thumb rounded */
+    transition: background-color 0.2s; /* Optional: Adds a transition effect when hovering */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #4338CA; /* Darker color on hover */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f0efef; /* Background of the scrollbar track */
+    border-radius: 4px; /* Makes the track rounded */
+}
+
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .typing {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as typing */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
