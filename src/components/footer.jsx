@@ -12,7 +12,7 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const links = [
   {
@@ -96,6 +96,7 @@ export const Footer = () => (
                   fontSize="sm"
                   variant="unstyled"
                   colorScheme="gray"
+                  _hover={{ color: "gray.500" }}
                   href={link.href}
                 >
                   {link.label}
@@ -124,7 +125,12 @@ export const Footer = () => (
           aria-label="LinkedIn"
           icon={<FaLinkedin />}
         />
-        <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub />} />
+        <IconButton
+          as="a"
+          href="#"
+          aria-label="GitHub"
+          icon={<FaInstagram />}
+        />
         <IconButton as="a" href="#" aria-label="Twitter" icon={<FaTwitter />} />
       </ButtonGroup>
     </Stack>

@@ -1,31 +1,37 @@
 import { motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
 import { Fragment, useEffect, useRef, useState } from "react";
+import Nav from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const TerminalContact = () => {
   const containerRef = useRef(null);
   const inputRef = useRef(null);
 
   return (
-    <section
-      style={{
-        backgroundImage: "url(/contactbg.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      className="px-4 py-12 bg-violet-600 h-screen flex items-center justify-center"
-    >
-      <div
-        ref={containerRef}
-        onClick={() => {
-          inputRef.current?.focus();
+    <>
+      <Nav />
+      <section
+        style={{
+          backgroundImage: "url(/contactbg.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-        className="h-96 bg-slate-950/70 backdrop-blur rounded-lg w-full max-w-3xl mx-auto overflow-y-scroll shadow-xl cursor-text font-mono"
+        className="px-4 py-12 bg-violet-600 h-screen flex items-center justify-center"
       >
-        <TerminalHeader />
-        <TerminalBody inputRef={inputRef} containerRef={containerRef} />
-      </div>
-    </section>
+        <div
+          ref={containerRef}
+          onClick={() => {
+            inputRef.current?.focus();
+          }}
+          className="h-96 bg-slate-950/70 backdrop-blur rounded-lg w-full max-w-3xl mx-auto overflow-y-scroll shadow-xl cursor-text font-mono"
+        >
+          <TerminalHeader />
+          <TerminalBody inputRef={inputRef} containerRef={containerRef} />
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 
@@ -93,7 +99,7 @@ const TerminalBody = ({ containerRef, inputRef }) => {
 const InitialText = () => {
   return (
     <>
-      <p>Hey there! We're excited to link 🔗</p>
+      <p>Hey there! We&apos;re excited to link 🔗</p>
       <p className="whitespace-nowrap overflow-hidden font-light">
         ------------------------------------------------------------------------
       </p>
@@ -160,7 +166,7 @@ const Summary = ({ questions, setQuestions }) => {
 
   return (
     <>
-      <p>Beautiful! Here's what we've got:</p>
+      <p>Beautiful! Here&apos;s what we&apos;ve got:</p>
       {questions.map((q) => {
         return (
           <p key={q.key}>
@@ -172,7 +178,7 @@ const Summary = ({ questions, setQuestions }) => {
       {complete ? (
         <p className="text-emerald-300">
           <FiCheckCircle className="inline-block mr-2" />
-          <span>Sent! We'll get back to you ASAP 😎</span>
+          <span>Sent! We&apos;ll get back to you ASAP 😎</span>
         </p>
       ) : (
         <div className="flex gap-2 mt-2">

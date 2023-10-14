@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Gallery = () => {
   return (
-    <div className="bg-slate-950 px-4 h-screen flex items-center flex-col justify-center">
+    <div className="bg-slate-900 px-4 h-screen flex items-center flex-col justify-center">
       <h1 className="text-white text-5xl font-bold mb-20 -mt-12 text-center">
         Our Trusted Businesses on the Road to{" "}
         <span className="text-purple-500">Success</span>
@@ -31,10 +31,10 @@ const ShimmerBorderCard = () => {
             <FaArrowRight className="ml-4 mt-1 hover:-rotate-45 transition-transform duration-300 hover:text-purple-500 hover:transition-transform hover" />
           </h4>
           <p className="relative z-10 text-slate-400">
-            A gourmet Indian restaurant located in Eden Prairie and serving the Twin
-            Cities since 2008, India Spice House has garnered the best name over the
-            years and understands the importance of gathering together and
-            eating well.
+            A gourmet Indian restaurant located in Eden Prairie and serving the
+            Twin Cities since 2008, India Spice House has garnered the best name
+            over the years and understands the importance of gathering together
+            and eating well.
           </p>
         </div>
 

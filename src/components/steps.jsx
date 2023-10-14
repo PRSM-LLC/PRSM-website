@@ -146,12 +146,12 @@ const ExampleFeature = ({ Icon, step }) => {
             <br />
             <br />
             <span className="text-blue-400">
-              $ select-plan "Advanced Web and Marketing Package"
+              $ select-plan &quot;Advanced Web and Marketing Package&quot;
             </span>
             <br />
             &gt;{" "}
             <span className="text-yellow-500">
-              Plan "Advanced Web and Marketing Package" selected!
+              Plan &quot;Advanced Web and Marketing Package&quot; selected!
             </span>{" "}
             Kickstart your online journey.
           </p>
@@ -170,27 +170,27 @@ const ExampleFeature = ({ Icon, step }) => {
             <br />
             &gt; Pending feedback:{" "}
             <span className="text-red-500">
-              "Increase logo size, change color palette."
+              &quot;Increase logo size, change color palette.&quot;
             </span>
             <br />
             &gt; Pro insights:{" "}
             <span className="text-white">
-              "Optimize images for faster load times, Implement responsive
-              design for better mobile view."
+              &quot;Optimize images for faster load times, Implement responsive
+              design for better mobile view.&quot;
             </span>
             <br />
             <br />
             <span className="text-blue-400">
-              &gt; $ request-revision "Increase logo size, change color
-              palette."
+              &gt; $ request-revision &quot;Increase logo size, change color
+              palette.&quot;
             </span>
             <br />
             &gt; <span className="text-green-500">Revision noted</span>. Our
             expert team will implement the requested changes.
             <br />
             <span className="text-blue-400">
-              &gt; $ apply-pro-insights "Optimize images, Implement responsive
-              design."
+              &gt; $ apply-pro-insights &quot;Optimize images, Implement
+              responsive design.&quot;
             </span>
             <br />
             &gt; <span className="text-green-500">Insights applied</span>.
@@ -199,7 +199,8 @@ const ExampleFeature = ({ Icon, step }) => {
             <br />
             &gt; Our Pro Tip:{" "}
             <span className="text-purple-400">
-              "Considering the latest trends, we recommend X, Y, and Z"
+              &quot;Considering the latest trends, we recommend X, Y, and
+              Z&quot;
             </span>
             <br />
             &gt; Status:{" "}
@@ -235,7 +236,8 @@ const ExampleFeature = ({ Icon, step }) => {
             <br />
             &gt;{" "}
             <span className="text-blue-400">
-              $ schedule-orientation "Introduction to your new digital space"
+              $ schedule-orientation &quot;Introduction to your new digital
+              space&quot;
             </span>
             <br />
             &gt; <span className="text-green-500">
@@ -277,7 +279,7 @@ const ExampleFeature = ({ Icon, step }) => {
         <>
           <p className="font-mono text-xl text-slate-200">
             <span className="text-blue-400">
-              $ request-support "Issue with homepage loading speed."
+              $ request-support &quot;Issue with homepage loading speed.&quot;
             </span>
             <br />
             &gt; <span className="text-yellow-500">Support ticket opened</span>.
@@ -295,7 +297,7 @@ const ExampleFeature = ({ Icon, step }) => {
             <br />
             <br />
             <span className="text-blue-400">
-              $ apply-strategy "SEO improvements"
+              $ apply-strategy &quot;SEO improvements&quot;
             </span>
             <br />
             &gt; Elevate your online presence with our{" "}
@@ -306,7 +308,7 @@ const ExampleFeature = ({ Icon, step }) => {
             <span className="text-red-500">Book a consultation call!</span>
             <br />
             <span className="text-blue-400">
-              $ book-consultation "Preferred Date"
+              $ book-consultation &quot;Preferred Date&quot;
             </span>
             <br />
             &gt; <span className="text-green-500">

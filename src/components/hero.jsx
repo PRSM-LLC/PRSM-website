@@ -39,7 +39,7 @@ export default function Hero() {
         fontWeight="extrabold"
       >
         <HStack>
-          <chakra.span color="black">Let's get </chakra.span>
+          <chakra.span color="black">Let&apos;s get </chakra.span>
           <chakra.span> </chakra.span>
           <Typewriter
             options={{
